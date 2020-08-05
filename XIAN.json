@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "d59c0d3f-5eb0-4ac3-bb58-67a40ac0af7d",
+		"name": "限号",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://v.juhe.cn/xianxing/citys?key=3dd5c4bc10b8a59b68fdf2e1b19b4c4d",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "340f8d85-a98c-4475-97ca-8f84ade39ae6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://v.juhe.cn/xianxing/citys?key=3dd5c4bc10b8a59b68fdf2e1b19b4c4d",
+					"protocol": "http",
+					"host": [
+						"v",
+						"juhe",
+						"cn"
+					],
+					"path": [
+						"xianxing",
+						"citys"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "3dd5c4bc10b8a59b68fdf2e1b19b4c4d"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
